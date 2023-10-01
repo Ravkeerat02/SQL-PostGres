@@ -29,3 +29,12 @@
 SELECT name , title 
 FROM authors
 LEFT join books ON authors.id = books.author_id
+
+SELECT url , contents 
+FROM COMMENTS 
+JOIN photos on photos.id = comments.photo_id
+-- FILTER OUT DATA - based on the id
+-- WHERE comments.user_id = photos.user_id
+-- THREE WAY JOIN - merging three tables togetherALTER
+JOIN users on users.id = comments.user_id AND users.id = photos.user_id
+

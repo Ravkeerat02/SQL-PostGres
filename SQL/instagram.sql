@@ -78,7 +78,15 @@ Table hashtags_posts {
   post_id INTEGER [ref: > posts.id]
 }
 
-// following - relation between user 
+// following - relation between user & follower
+Table followers{
+  id serial [pk, increment]
+  created_at TIMESTAMP
+  // DELETE THE ROW - WHEN SOMEONE UNFOLLOWED
+  leader_id INTEGER [ref: > users.id]
+  follower_id INTEGER [ref: > users.id]
+
+}
 
 
 

@@ -1,0 +1,7 @@
+CREATE TABLE hashtags(
+	id SERIAL PRIMARY KEY , 
+	created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+-- 	must be provided
+	title VARCHAR(20) NOT NULL UNIQUE
+
+)

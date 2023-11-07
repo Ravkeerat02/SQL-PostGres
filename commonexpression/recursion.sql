@@ -25,6 +25,5 @@ FROM suggestions
 -- combining the final outcome for the needed data 
 JOIN users ON users.id = suggestions.leader_id 
 WHERE depth > 1 
-LIMIT 30
-
+LIMIT 25
 

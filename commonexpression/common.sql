@@ -1,3 +1,5 @@
+-- Refernce for CRUD based operations - makes it easy to read and understand compelx queries
+
 -- QUERY EXAMPLE
 SELECT username , tags.created_at
 FROM users 
